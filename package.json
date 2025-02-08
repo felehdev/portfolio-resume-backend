@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-resume-backend",
+  "version": "1.0.0",
+  "description": "This application is designed to help users create professional CVs and portfolios with ease. It provides a user-friendly interface where users can input their personal information, work experience, education, skills, and other relevant details. The app then generates a well-formatted CV and portfolio that can be downloaded or shared online.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felehdev/portfolio-resume-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felehdev/portfolio-resume-backend/issues"
+  },
+  "homepage": "https://github.com/felehdev/portfolio-resume-backend#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
