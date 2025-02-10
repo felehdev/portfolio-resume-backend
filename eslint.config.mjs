@@ -1,26 +1,26 @@
 import globals from "globals";
 import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
-import jsdoc from "eslint-plugin-jsdoc";
+import prettier from "eslint-plugin-prettier";
 import eslintConfigPrettier from "eslint-config-prettier";
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  { files: ["**/*.{js,mjs,cjs,ts}"] },
   {
+    files: ["src/**/*.{js,ts}"],
     plugins: {
-      jsdoc: jsdoc,
+      prettier: prettier,
     },
-  },
-  { languageOptions: { globals: globals.browser } },
-  {
     rules: {
-      eqeqeq: "off",
-      "no-unused-vars": "error",
-      "prefer-const": ["error", { ignoreReadBeforeAssign: true }],
-      "jsdoc/require-description": "error",
-      "jsdoc/check-values": "error",
+      "prettier/prettier": "error",
+      "no-unused-vars": "warn",
+      "prefer-const": "warn",
+      "no-console": "warn",
     },
+    languageOptions: {
+      globals: globals.node
+    },
+    ignores: ["node_modules", "dist"],
   },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,

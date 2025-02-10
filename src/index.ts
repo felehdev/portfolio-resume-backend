@@ -1,14 +1,12 @@
-import express from 'express';
+import express, { Request, Response } from "express";
 
 const app = express();
 const port = 3000;
-let b = 1;
-b += 1;
-console.log(b);
-app.get('/', (req, res) => {
-    res.send('Hello World with swc and nodemon!');
+
+app.get("/", (req: Request, res: Response) => {
+  res.send("Hello World with swc and nodemon!");
 });
 
 app.listen(port, () => {
-    console.log(`Very Good ${port}`);
+  console.log(`Very Good ${port}`);
 });
