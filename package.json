@@ -1,0 +1,50 @@
+{
+    "name": "portfolio-resume-backend",
+    "version": "1.0.0",
+    "description": "This application is designed to help users create professional CVs and portfolios with ease. It provides a user-friendly interface where users can input their personal information, work experience, education, skills, and other relevant details. The app then generates a well-formatted CV and portfolio that can be downloaded or shared online.",
+    "main": "src/index.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon",
+        "lint": "eslint src/**/*",
+        "lint:fix": "eslint src/**/* --fix",
+        "format": "prettier --check \"src/**/*.{js,ts,json,css,md}\"",
+        "format:fix": "prettier --write \"src/**/*.{js,ts,json,css,md}\"",
+        "prepare": "husky install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/felehdev/portfolio-resume-backend.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/felehdev/portfolio-resume-backend/issues"
+    },
+    "homepage": "https://github.com/felehdev/portfolio-resume-backend#readme",
+    "dependencies": {
+        "express": "^4.21.2"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.20.0",
+        "@swc/cli": "^0.6.0",
+        "@swc/core": "^1.10.15",
+        "@swc/register": "^0.1.10",
+        "@types/express": "^5.0.0",
+        "@types/node": "^22.13.1",
+        "@typescript-eslint/eslint-plugin": "^8.23.0",
+        "@typescript-eslint/parser": "^8.23.0",
+        "eslint": "^9.20.0",
+        "eslint-config-prettier": "^10.0.1",
+        "eslint-plugin-prettier": "^5.2.3",
+        "globals": "^15.14.0",
+        "husky": "^8.0.0",
+        "lint-staged": "^15.4.3",
+        "nodemon": "^3.1.9",
+        "prettier": "^3.5.0",
+        "prettier-eslint": "^16.3.0",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.23.0"
+    }
+}
