@@ -16,8 +16,8 @@ Whether you are a job seeker, freelancer, or professional, Portfolio Resume prov
 
 | Technology | Description          |
 | ---------- | -------------------- |
-| Frontend   | React.js TS          |
-| Backend    | Node.js & Express.js |
+| Frontend   | React          |
+| Backend    | Node & Express |
 | Database   | MongoDB              |
 
 ## 🎯 Project Goals
@@ -26,8 +26,27 @@ This project aims to:
 
 - 🔹 Improve workflow efficiency and collaboration.
 - 🔹 Follow best practices in full-stack development.
-- 🔹 Enhance our experience with React.js, Node.js, and MongoDB.
+- 🔹 Enhance our experience with TypeScript, React, Node, Express, and MongoDB.
 
+## ⚠️ Attention  
+This repository is intended for **local development and testing only**. We **do not recommend** using it in a production environment.  
+
+## 🚀 Installation & Setup  
+
+### 🐳 Recommended: Run with Docker  
+For a consistent development environment, we **highly recommend using Docker**.  
+
+Run the following commands:  
+```bash
+docker-compose build --no-cache
+docker-compose up
+```
+### 💻 Alternative: Run Without Docker
+If you prefer running the code directly on your machine, use the following commands:
+```
+npm install
+npm run dev
+```
 ## 🤝 Collaboration Convention
 
 ### 🔀 Branch Guidelines
